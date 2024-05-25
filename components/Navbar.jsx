@@ -19,7 +19,7 @@ const Navbar = () => {
                 </span>
             </div>
 
-            <ul className={`absolute md:static left-0 ${menu ? 'top-[74px]' : 'top-[-300px]'} w-full md:w-auto flex flex-col md:flex-row md:items-center py-5 md:py-0 px-6 md:px-0 gap-x-10 gap-y-6 md:gap-y-0 font-primary text-sm bg-white drop-shadow-lg md:drop-shadow-none transition-all ease-in duration-300`}>
+            <ul className={`absolute md:static left-0 top-[74px] w-full md:w-auto flex flex-col md:flex-row md:items-center py-5 md:py-0 px-6 md:px-0 gap-x-10 gap-y-6 md:gap-y-0 font-primary text-sm bg-white drop-shadow-lg md:drop-shadow-none ${menu ? 'scale-y-100' : 'scale-y-0'} origin-top transition-transform duration-300`}>
                 <a href={'#'} className="navLink">ব্লগ</a>
                 <a href={'#'} className="navLink">বই</a>
                 <a href={'#'} className="navLink">লিখুন</a>
